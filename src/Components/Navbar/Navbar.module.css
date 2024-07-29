@@ -1,0 +1,148 @@
+
+
+
+
+.navbar {
+  width: 100%;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-size: #e5e5e5;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
+  z-index: 1;
+}
+
+.logo {
+  width: 90px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.navbarRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icons {
+  width: 20px;
+  cursor: pointer;
+}
+
+.profile {
+  border-radius: 4px;
+  width: 35px;
+}
+
+.navbarProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: max-content;
+  background: #191919;
+  padding: 18px 22px;
+  text-decoration: underline;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown p {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navbarProfile:hover .dropdown {
+  display: inline;
+}
+
+.navDark {
+  background: #141414;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navLinks,
+  .navbarRight {
+    display: none;
+  }
+
+  .navbarLeft {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navLinks.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #141414;
+    padding: 10px 0;
+  }
+
+  .navLinks li,
+  .searchBar,
+  .signOutButton {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbarRight.hide {
+    display: none;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .navLinks,
+  .navbarRight {
+    display: flex;
+  }
+
+  .searchBar {
+    display: none;
+  }
+}
+@media (min-width: 769px){
+  .sign{
+    display: none;
+  }
+}

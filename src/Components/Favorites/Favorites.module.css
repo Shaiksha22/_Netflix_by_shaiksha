@@ -1,0 +1,430 @@
+/* .hero{
+ 
+  background-image: url('../../../public/background_banner.jpg');
+  background-repeat: no-repeat;
+  
+}
+.cardList {
+  margin-top: 500px;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  margin: px;
+  
+}
+
+.cardList::-webkit-scrollbar {
+  display: none;
+}
+
+.heroCaption h1{
+  margin-bottom: 20px;
+  position: absolute;
+   margin-top: 500px;
+}
+.nav{
+  position: fixed;
+  top: 0;
+} */
+
+
+
+
+/* 
+@media (max-width:500px) {
+  .heroCaption h1 {
+     display: block;
+     margin-top: 2000px;
+  }
+}
+
+
+.titleCards {
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+
+.cardList {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.cardList::-webkit-scrollbar {
+  display: none;
+}
+
+.cardList img {
+  width: 240px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardList .card {
+  position: relative;
+}
+
+.cardList .card p {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 1024px) {
+  .titleCard {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .titleCard {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .titleCard h2 {
+    font-size: 20px;
+  }
+
+  .heroCaption {
+    margin-top: 500px;
+  }
+
+  .cardList img {
+    width: 200px;
+   
+  }
+
+  .cardList p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .titleCard {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .titleCard h2 {
+    font-size: 15px;
+  }
+
+  .cardList img {
+    width: 140px;
+    height: 100px;
+  }
+
+  .cardList p {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+.hero {
+  position: relative;
+}
+
+.bannerImg {
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 75%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.heroCaption {
+  position: absolute;
+  width: 100%;
+  padding-left: 6%;
+  bottom: 0;
+}
+
+.captionImg {
+  width: 90%;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+
+.heroCaption p {
+  max-width: 700px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.heroBtns .btn img {
+  width: 25px;
+}
+
+.heroBtns .btn {
+  border: 0;
+  outline: 0;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.heroBtns .btn.darkBtn {
+  color: #fff;
+  background: #6d6d6eb3;
+}
+
+.heroBtns .btn:hover {
+  background-color: #ffffffbf;
+}
+
+.heroBtns .btn.dark-btn:hover {
+  background: #6d6d6e66;
+}
+
+.moreCards {
+  padding-left: 6%;
+}
+
+.captionImg {
+  font-size: 100px;
+}
+
+.hr {
+  margin-bottom: 50px;
+}
+
+.heartIcon {
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 1024px) {
+  .heroCaption .titleCard {
+    margin-top: 200px;
+  }
+
+  .heroBtns {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroCaption {
+    padding-left: 4%;
+  }
+
+  .captionImg {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+
+  .heroCaption p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .heroBtns .btn img {
+    width: 20px;
+  }
+
+  .moreCards {
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .captionImg {
+       font-size: 20px;
+    
+  }
+
+ 
+
+  .heroBtns .btn {
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
+}
+  
+
+General Styles
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* General Styles */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.hero {
+  background-image: url('../../../public/background_banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px; /* Adjust padding to avoid overlap with the fixed navbar */
+  min-height: 100vh;
+}
+
+.heroCaption {
+  margin-top: 20px;
+  padding: 20px 6%;
+ 
+}
+
+.heroCaption h1 {
+  margin-bottom: 20px;
+}
+
+.hr {
+  margin: 20px 0;
+  border: 1px solid #fff;
+}
+
+.titleCard {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cardList {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.cardList::-webkit-scrollbar {
+  display: none;
+}
+
+.cardList img {
+  width: 240px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  width: 240px;
+}
+
+.card p {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 1024px) {
+  .cardList img {
+    width: 200px;
+  }
+
+  .card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroCaption {
+    padding: 10px 4%;
+  }
+
+  .heroCaption h1 {
+    font-size: 24px;
+  }
+
+  .cardList img {
+    width: 160px;
+  }
+
+  .card {
+    width: 160px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .heartIcon {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroCaption h1 {
+    font-size: 18px;
+  }
+
+  .cardList img {
+    width: 120px;
+  }
+
+  .card {
+    width: 120px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+
+  .heartIcon {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+
+
+
+ 
