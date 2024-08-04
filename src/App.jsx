@@ -33,7 +33,7 @@ const navigate = useNavigate()
   },[])
   return (
     <>
-    <Router basename="/_Netflix_by_shaiksha/"/>
+   
    <FavoritesProvider>
   
       <ToastContainer theme="dark" />
