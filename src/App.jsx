@@ -1,6 +1,6 @@
 import "./index.css";
 import Home from "./Pages/Home/Home";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Router } from "react-router-dom";
 import Login from "../src/Pages/Login/Login";
 import Player from "./Pages/Player/Player";
 import { onAuthStateChanged } from "firebase/auth";
@@ -33,6 +33,7 @@ const navigate = useNavigate()
   },[])
   return (
     <>
+    <Router basename="/_Netflix_by_shaiksha/"/>
    <FavoritesProvider>
   
       <ToastContainer theme="dark" />
